@@ -1,0 +1,292 @@
+nav {
+    background-color: #006d6f;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;   /* Center */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;   /* Space kam */
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding-top: 0;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Gol */
+    object-fit: cover;
+    border: 2px solid white; /* Optional border */
+    margin-left: 10px;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+}
+.image img{
+    width: 300px;
+    height: auto;
+}
+.home{
+    background-image: 
+   linear-gradient (rgba(0,0,0,0.5),
+    rgba (0,0,0,0.5));
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    min-height: 77vh;
+}
+button{
+    cursor: pointer;
+    background: #ff4500;
+}
+
+#Address{
+    margin-top: 80px;
+}
+p{
+    margin-top: 80px;
+}
+h1{
+    margin-top: 70px;
+}
+ul{
+    margin-top: 75px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background: #f5f5f5;
+    min-height: 72vh;
+}
+.about-text{
+    width: 45%;
+}
+.about-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.about-image img{
+    width: 100%;
+    max-width: 450px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.about-image img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+nav{
+    background:#0b7fab;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+}
+
+.services{
+    text-align:center;
+    padding:40px;
+    margin-top: 10%;
+}
+
+.services-box{
+    display:inline-block;
+    width:250px;
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px gray;
+    transition:.3s;
+}
+
+.services-box:hover{
+    transform:translateY(-8px);
+}
+
+.services-box img{
+    width:180px;
+    height:180px;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+.services-box h3{
+    margin-top:15px;
+}
+
+
+/* ========== MODAL ========== */
+
+.modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+
+    backdrop-filter:blur(8px);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+.modal-content{
+
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    position:relative;
+
+    animation:popup .4s;
+}
+
+@keyframes popup{
+
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.modal-content img{
+
+    width:250px;
+    height:220px;
+    border-radius:10px;
+}
+
+.modal-content h2{
+
+    color:#0b7fab;
+}
+
+.modal-content p{
+
+    font-size:17px;
+    line-height:28px;
+}
+
+.close{
+
+    position:absolute;
+    top:10px;
+    right:18px;
+    font-size:35px;
+    color:red;
+    cursor:pointer;
+}
+
+.close:hover{
+
+    color:black;
+}
+
+
+/* Slider Container */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* All Slides */
+.slides {
+    display: flex;
+    width: 100%; /* 3 slides */
+    animation: slideshow 12s infinite;
+}
+
+/* Single Slide */
+.slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Images */
+.slide img {
+    width: 32%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes slideshow {
+    0%,30% {
+        transform: translateX(0%);
+    }
+    33%,63% {
+        transform: translateX(-33.33%);
+    }
+    66%,96% {
+        transform: translateX(-66.66%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Section */
+.patient-care {
+    width: 100%;
+    background: #b6a5a5;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 80px;
+    min-height: 69vh;
+    overflow: hidden; /* Scroll remove */
+}
